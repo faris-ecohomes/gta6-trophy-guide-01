@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vice Ledger — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="css/guide.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-text">
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5 · offline guide</p>
+    <h1>Vice Ledger</h1>
+    <p class="standfirst">Every one of the 55 official trophies, a guide to each in our own
+      words with its sources named, a roadmap to the platinum, and a tracker that
+      remembers where you left off.</p>
+  </div>
+  <div class="progress-card" aria-label="Your progress">
+    <p class="progress-big"><span id="earned-count">0</span><span class="progress-of"> / 55 earned</span></p>
+    <div class="progress-track"><div id="progress-bar" class="progress-fill"></div></div>
+    <p id="grade-tally" class="grade-tally"></p>
+    <p id="points-line" class="points-line"></p>
+  </div>
+</header>
+
+<nav id="view-tabs" class="view-tabs" aria-label="Guide sections">
+  <button class="tab is-active" data-view="guide" type="button">Checklist &amp; guide</button>
+  <button class="tab" data-view="roadmap" type="button">Roadmap</button>
+  <button class="tab" data-view="missables" type="button">Missables</button>
+  <button class="tab" data-view="next" type="button">Next up</button>
+</nav>
+
+<section class="toolbar" aria-label="Filters and settings">
+  <label class="search-box">Search
+    <input id="search" type="search" placeholder="trophy, mission, place…">
+  </label>
+  <div id="kind-filters" class="chip-row" role="group" aria-label="Filter by kind">
+    <button class="chip is-active" data-kind="all" type="button">All</button>
+    <button class="chip" data-kind="story" type="button">Story</button>
+    <button class="chip" data-kind="missable" type="button">Missable</button>
+    <button class="chip" data-kind="collectibles" type="button">Collectibles</button>
+    <button class="chip" data-kind="activities" type="button">Activities</button>
+    <button class="chip" data-kind="feats" type="button">Feats</button>
+    <button class="chip" data-kind="completion" type="button">Completion</button>
+  </div>
+  <div class="toggle-row">
+    <label class="switch"><input id="spoiler-toggle" type="checkbox"> Spoiler shield
+      <span class="hint">mask unearned story trophies</span></label>
+    <label class="switch"><input id="hidden-toggle" type="checkbox"> Reveal hidden
+      <span class="hint">show the trophies PlayStation hides</span></label>
+    <label class="switch"><input id="unearned-toggle" type="checkbox"> Unearned only</label>
+  </div>
+  <div class="io-row">
+    <button id="export-btn" class="io-btn" type="button">Export progress</button>
+    <button id="import-btn" class="io-btn" type="button">Import progress</button>
+    <input id="import-file" type="file" accept="application/json" hidden>
+  </div>
+</section>
+
+<main>
+  <section id="view-guide" class="view is-active">
+    <div class="guide-layout">
+      <div id="trophy-list" class="trophy-list" aria-live="polite"></div>
+      <aside id="guide-pane" class="guide-pane" aria-label="Trophy guide"></aside>
+    </div>
+  </section>
+  <section id="view-roadmap" class="view"><div id="roadmap-body"></div></section>
+  <section id="view-missables" class="view"><div id="missables-body"></div></section>
+  <section id="view-next" class="view"><div id="next-body"></div></section>
+</main>
+
+<footer class="colophon">
+  <p>Names, descriptions and grades are the official PlayStation 5 list, frozen
+    2026-11-18 (Exophase and PSNProfiles agree on every entry). Guides are our own
+    words; where a detail is not yet pinned down in the game, the guide says so.
+    No Rockstar Games logo or artwork is used. Progress never leaves this browser
+    unless you export it yourself.</p>
+</footer>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
